@@ -1,0 +1,8 @@
+version: '3'
+
+tasks:
+  serve:
+    cmds:
+      - browser-sync start -s 'src' -f ./src/**/*
+  default:
+    deps: [serve]
